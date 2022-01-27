@@ -30,10 +30,13 @@ class CampsiteInfo extends React.Component{
               
  
    render() {
-       return this.props.campsite ? <div className="row">
+       return this.props.campsite ? 
+       <div className="container"> 
+            <div className="row">
                {this.renderCampsite(this.props.campsite)}
                {this.renderComments(this.props.campsite.comments)}
-           </div>:null
+            </div>
+        </div>:null
    }
 };
  
